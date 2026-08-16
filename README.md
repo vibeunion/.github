@@ -28,7 +28,7 @@ VibeUnion makes practical building blocks for vibecoding: describe what you want
 | Add caching, queues, and rate limits without Redis | [postgresx](https://github.com/vibeunion/postgresx) |
 | Connect a WeChat mini-program to Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
 
-![Product journey from idea to WeChat](https://raw.githubusercontent.com/vibeunion/.github/main/assets/product-journey-en.svg)
+![SupaCloud Lite to SupaCloud production path](https://raw.githubusercontent.com/vibeunion/.github/main/assets/product-journey-en.svg)
 
 | Growth stage | Main question | Add |
 | --- | --- | --- |
@@ -92,7 +92,7 @@ VibeUnion 为 vibecoding 提供实用的开源积木：你先说清楚想做什�
 | 不部署 Redis，也想做缓存、队列和限流 | [postgresx](https://github.com/vibeunion/postgresx) |
 | 让微信小程序连接 Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
 
-![从想法到微信用户的产品成长路径](https://raw.githubusercontent.com/vibeunion/.github/main/assets/product-journey-zh.svg)
+![SupaCloud Lite 到标准版，再到产品能力扩展](https://raw.githubusercontent.com/vibeunion/.github/main/assets/product-journey-zh.svg)
 
 | 成长阶段 | 你要解决的问题 | 添加 |
 | --- | --- | --- |
