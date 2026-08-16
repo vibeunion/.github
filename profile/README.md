@@ -29,12 +29,12 @@ You do not need to learn the whole stack before starting. Pick the part you need
 | Connect a WeChat mini-program to Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
 
 ```mermaid
-flowchart LR
-    A[Your idea] --> B[supacloud<br/>Run the app]
-    B --> C[svadmin<br/>Manage the app]
-    B --> D[supauth<br/>Manage access]
-    B --> E[postgresx<br/>Handle background work]
-    B --> F[supabase-mp-js<br/>Reach WeChat users]
+graph LR
+    A["Your idea"] --> B["supacloud - Run the app"]
+    B --> C["svadmin - Manage the app"]
+    B --> D["supauth - Manage access"]
+    B --> E["postgresx - Handle background work"]
+    B --> F["supabase-mp-js - Reach WeChat users"]
 ```
 
 | Growth stage | Main question | Add |
@@ -150,12 +150,12 @@ VibeUnion 为 **vibecoding** 提供实用的开源积木：你先说清楚想做
 | 让微信小程序连接 Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
 
 ```mermaid
-flowchart LR
-    A[你的想法] --> B[supacloud<br/>运行应用]
-    B --> C[svadmin<br/>管理应用]
-    B --> D[supauth<br/>管理访问]
-    B --> E[postgresx<br/>处理后台工作]
-    B --> F[supabase-mp-js<br/>连接微信用户]
+graph LR
+    A["你的想法"] --> B["supacloud - 运行应用"]
+    B --> C["svadmin - 管理应用"]
+    B --> D["supauth - 管理访问"]
+    B --> E["postgresx - 处理后台工作"]
+    B --> F["supabase-mp-js - 连接微信用户"]
 ```
 
 | 成长阶段 | 你要解决的问题 | 添加 |
