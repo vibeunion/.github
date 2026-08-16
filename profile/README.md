@@ -14,25 +14,99 @@
 
 ## English
 
-**VibeUnion** builds open-source infrastructure for vibecoding — the practice of steering AI agents to ship production software by intent. Our stack covers platform-as-a-service, admin frameworks, authentication, database tooling, and WeChat mini-program clients, all in TypeScript and designed to compose.
+VibeUnion makes practical building blocks for vibecoding: describe what you want to build, let AI help write the code, and add only the pieces your product needs.
 
-### Projects
+You do not need to learn the whole stack before starting. Pick the part you need today and add the rest when your project grows.
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| [supacloud](https://github.com/vibeunion/supacloud) | Ultra-lightweight, self-hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS with shared Postgres, Garage S3, and a Caddy gateway. Includes a Bun-native single-project Lite edition. | Bun · Elysia · Pigsty · SvelteKit |
-| [svadmin](https://github.com/vibeunion/svadmin) | Headless admin framework for Svelte 5. 30+ reactive hooks, 16 field components, 16 data providers, RBAC, i18n, dark mode, Inferencer, and a CLI scaffold. Bring your own backend. | Svelte 5 · TanStack Query · shadcn-svelte |
-| [supauth](https://github.com/vibeunion/supauth) | SupaCloud-hosted enterprise IAM and user-center surface comparable to Logto. Enhances Supabase Auth with hosted UI, Admin Console, organization/RBAC governance, audit, and SDKs — upstream-compatible, no forked GoTrue. | Bun · Elysia · SvelteKit · svadmin |
-| [postgresx](https://github.com/vibeunion/postgresx) | PostgreSQL-backed replacement toolkit for Redis + Postgres architectures. KV/TTL cache, collections, counters, advisory locks, rate limiting, pub/sub, and durable outbox — no Redis required. | Bun · PostgreSQL · `pg` |
-| [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) | WeChat mini-program Supabase JavaScript client. Reuses official `@supabase/supabase-js` v2 and only maintains the WeChat runtime adapter layer (fetch, storage, realtime, upload). | TypeScript · WeChat Mini Program |
+### Start With Your Idea
 
-### How they compose
+| I want to... | Start here |
+| --- | --- |
+| Put my app online with a database, login, file storage, and APIs | [supacloud](https://github.com/vibeunion/supacloud) |
+| Add a ready-made admin or management screen | [svadmin](https://github.com/vibeunion/svadmin) |
+| Add user login, teams, roles, and an organization center | [supauth](https://github.com/vibeunion/supauth) |
+| Make my app faster without running a separate Redis server | [postgresx](https://github.com/vibeunion/postgresx) |
+| Connect a WeChat mini-program to Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
 
-- **supacloud** hosts your backend (Postgres, Auth, Storage, Edge Functions, Realtime) and can serve as the data source for a **svadmin** dashboard.
-- **supauth** layers enterprise IAM (hosted login UI, org/RBAC, audit) on top of supacloud-hosted Supabase Auth, with an admin console built on **svadmin**.
-- **postgresx** removes Redis from your stack by reimplementing cache, queue, and realtime primitives on Postgres — useful inside supacloud tenants or standalone services.
-- **svadmin** is backend-agnostic and ships a `@svadmin/supabase` data provider, so it connects to supacloud-hosted projects out of the box.
-- **supabase-mp-js** brings the same Supabase client API into WeChat mini-programs, connecting to supacloud or any Supabase backend.
+### The Projects
+
+#### [supacloud](https://github.com/vibeunion/supacloud) — The Place Your App Runs
+
+SupaCloud is a self-hosted home for Supabase-style projects. It gives you a database, login, file storage, realtime updates, server functions, logs, and a web console on infrastructure you control.
+
+Useful when you want to:
+
+- Run several small apps on one affordable server
+- Start locally with the lightweight SupaCloud Lite edition
+- Deploy a frontend from GitHub and manage projects from a browser
+- Add social login, background jobs, realtime notifications, or automatic scaling later
+
+Think of it as the foundation: your app, its data, and the services around it live in one place.
+
+#### [svadmin](https://github.com/vibeunion/svadmin) — The Admin Screens You Do Not Want to Build From Scratch
+
+Svadmin helps you make the screens used to manage an app: user lists, orders, content, settings, reports, and permissions. It works with different backends, so the UI does not lock you into one database or service.
+
+Useful when you want to:
+
+- Turn a database into a usable admin panel quickly
+- Add tables, forms, search, filters, import, and export
+- Give different staff members different permissions
+- Support light/dark mode, multiple languages, and realtime updates
+
+It includes ready-to-use components and hooks, plus adapters for Supabase, REST, GraphQL, Firebase, and other common backends.
+
+#### [supauth](https://github.com/vibeunion/supauth) — Login, Teams, and Permissions
+
+Supauth adds the parts of user management that a real product usually needs after basic login: hosted sign-in pages, team or organization accounts, roles, permissions, audit history, and an admin console.
+
+Useful when you want to:
+
+- Let users sign up and sign in without designing every screen yourself
+- Support teams, organizations, invitations, and roles
+- Give owners and staff a place to manage users and access
+- Keep using the normal Supabase Auth behavior underneath
+
+Supauth is an extra layer on top of Supabase Auth. You can start with simple login and add organization features when your product needs them.
+
+#### [postgresx](https://github.com/vibeunion/postgresx) — Common App Utilities, Using Your Database
+
+Postgresx provides everyday app utilities such as caching, counters, locks, rate limits, queues, and events using PostgreSQL. That means a small project can avoid adding and maintaining a separate Redis service.
+
+Useful when you want to:
+
+- Cache data or count views and requests
+- Prevent two jobs from running at the same time
+- Limit repeated requests
+- Run background jobs and send events between parts of an app
+- Keep the first version of your infrastructure small
+
+It supports Bun and Node.js and can also make migration easier for code that already uses Redis-style client methods.
+
+#### [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) — Supabase in WeChat Mini-Programs
+
+Supabase works well on the web, but WeChat mini-programs use different networking, storage, socket, and file-upload APIs. This package adapts the official Supabase JavaScript client to that environment.
+
+Useful when you want to:
+
+- Build a WeChat mini-program with the same backend as your web app
+- Reuse Supabase login, database queries, storage, and realtime features
+- Keep the official Supabase API instead of learning a completely different client
+- Move between web and WeChat without maintaining two separate data layers
+
+### How They Fit Together
+
+You can use one project by itself. A typical product grows like this:
+
+1. Start with **supacloud** for the database, login, storage, and server-side features.
+2. Add **svadmin** when you need a screen to manage users, content, orders, or settings.
+3. Add **supauth** when simple login grows into teams, roles, invitations, and audit history.
+4. Add **postgresx** when the app needs caching, background jobs, request limits, or event handling.
+5. Add **supabase-mp-js** when the same product needs a WeChat mini-program.
+
+In plain language:
+
+**supacloud runs the product, supauth manages who can use it, svadmin helps people operate it, postgresx handles common behind-the-scenes work, and supabase-mp-js brings it to WeChat.**
 
 ### Skills
 
@@ -44,25 +118,99 @@ We publish [Codex skills](https://developers.openai.com/codex) to help AI agents
 
 ## 中文
 
-**VibeUnion** 为 vibecoding 打造开源基础设施——用意图驱动 AI Agent 交付生产级软件。我们的技术栈覆盖 PaaS、管理后台框架、认证、数据库工具和微信小程序客户端，全部基于 TypeScript，可组合使用。
+VibeUnion 为 **vibecoding** 提供实用的开源积木：你先说清楚想做什么，再让 AI 帮你写代码，用一组简单、可复用的工具，把想法逐步做成真正能用的产品。
 
-### 项目
+你不需要一开始就学完整套技术栈。今天需要什么，就先用什么；项目变大以后，再按需要添加其他能力。
 
-| 项目 | 简介 | 技术栈 |
-| --- | --- | --- |
-| [supacloud](https://github.com/vibeunion/supacloud) | 超轻量自托管 Supabase PaaS。在 5 美元 VPS 上运行 100+ 隔离项目，共享 Postgres、Garage S3 和 Caddy 网关。内置 Bun 原生单项目 Lite 版。 | Bun · Elysia · Pigsty · SvelteKit |
-| [svadmin](https://github.com/vibeunion/svadmin) | 面向 Svelte 5 的 Headless 管理后台框架。30+ 响应式 Hook、16 种字段组件、16 种数据适配器、RBAC 权限、国际化、暗色模式、推断器、CLI 脚手架。自带后端适配。 | Svelte 5 · TanStack Query · shadcn-svelte |
-| [supauth](https://github.com/vibeunion/supauth) | SupaCloud 托管的企业级 IAM 与用户中心，对标 Logto。在 Supabase Auth 之上提供托管登录 UI、Admin Console、组织/RBAC 治理、审计和 SDK——上游兼容，不 fork GoTrue。 | Bun · Elysia · SvelteKit · svadmin |
-| [postgresx](https://github.com/vibeunion/postgresx) | 基于 PostgreSQL 的 Redis 替代工具包。KV/TTL 缓存、集合、计数器、咨询锁、限流、发布订阅、持久化发件箱——无需 Redis。 | Bun · PostgreSQL · `pg` |
-| [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) | 面向微信小程序的 Supabase JavaScript 客户端。复用官方 `@supabase/supabase-js` v2，仅维护微信运行时适配层（网络、存储、实时、上传）。 | TypeScript · 微信小程序 |
+### 先从想法开始
 
-### 如何组合
+| 我想做什么 | 从这里开始 |
+| --- | --- |
+| 让应用拥有数据库、登录、文件存储并上线运行 | [supacloud](https://github.com/vibeunion/supacloud) |
+| 快速做一个后台管理界面 | [svadmin](https://github.com/vibeunion/svadmin) |
+| 增加用户、团队、角色和组织管理 | [supauth](https://github.com/vibeunion/supauth) |
+| 不单独部署 Redis，也想做缓存、队列和限流 | [postgresx](https://github.com/vibeunion/postgresx) |
+| 让微信小程序连接 Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
 
-- **supacloud** 托管你的后端（Postgres、认证、存储、Edge Functions、实时推送），可作为 **svadmin** 仪表盘的数据源。
-- **supauth** 在 supacloud 托管的 Supabase Auth 之上叠加企业 IAM（托管登录 UI、组织/RBAC、审计），管理控制台基于 **svadmin** 构建。
-- **postgresx** 用 Postgres 重新实现缓存、队列和实时原语，帮你从架构中移除 Redis——可在 supacloud 租户内或独立服务中使用。
-- **svadmin** 后端无关，内置 `@svadmin/supabase` 数据适配器，开箱即用连接 supacloud 托管的项目。
-- **supabase-mp-js** 将同样的 Supabase 客户端 API 带入微信小程序，可连接 supacloud 或任意 Supabase 后端。
+### 五个项目
+
+#### [supacloud](https://github.com/vibeunion/supacloud) —— 应用运行的地方
+
+SupaCloud 是一个可以自己部署的 Supabase 风格后端。它把数据库、登录、文件存储、实时更新、服务端函数、日志和网页控制台放在一起，让你可以在自己控制的服务器上运行应用。
+
+适合这些场景：
+
+- 想在一台价格合适的服务器上运行多个小应用
+- 想先用轻量的 SupaCloud Lite 在本地开始
+- 想从 GitHub 部署前端，并通过浏览器管理项目
+- 以后可能需要社交登录、后台任务、实时通知或自动扩缩容
+
+可以把它理解成应用的地基：数据、登录和周边服务都在这里运行。
+
+#### [svadmin](https://github.com/vibeunion/svadmin) —— 不用从零开始写后台
+
+Svadmin 用来快速制作管理应用的界面，例如用户列表、订单、内容、设置、报表和权限管理。它可以连接不同后端，不会把你的界面锁死在某一种数据库或服务上。
+
+适合这些场景：
+
+- 想快速把数据库变成能用的管理后台
+- 需要表格、表单、搜索、筛选、导入和导出
+- 需要给不同工作人员分配不同权限
+- 需要中英文、暗色模式或实时更新
+
+它提供现成的界面组件和开发工具，也支持 Supabase、REST、GraphQL、Firebase 等常见后端。
+
+#### [supauth](https://github.com/vibeunion/supauth) —— 登录、团队和权限
+
+Supauth 处理真实产品在基础登录之外经常需要的功能：托管登录页、团队或组织账号、角色、权限、操作记录和管理后台。
+
+适合这些场景：
+
+- 不想自己从零设计注册和登录页面
+- 需要团队、组织、邀请和角色
+- 需要让管理员管理用户和访问权限
+- 仍然希望继续使用标准 Supabase Auth
+
+Supauth 是 Supabase Auth 上面的增强层。你可以先做简单登录，产品真的需要团队和组织功能时再加上它。
+
+#### [postgresx](https://github.com/vibeunion/postgresx) —— 用数据库完成常见的小工具
+
+Postgresx 使用 PostgreSQL 提供缓存、计数、锁、限流、队列和事件等常见能力。这样，小项目不必一开始就额外部署和维护 Redis。
+
+适合这些场景：
+
+- 缓存数据，或统计访问量和请求量
+- 防止同一个后台任务被重复执行
+- 限制短时间内的重复请求
+- 执行后台任务，并在应用之间传递事件
+- 希望第一版基础设施尽量简单
+
+它支持 Bun 和 Node.js，也能帮助已经使用 Redis 风格方法的项目逐步迁移。
+
+#### [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) —— 在微信小程序里使用 Supabase
+
+Supabase 在网页端很好用，但微信小程序有自己的网络、存储、Socket 和文件上传接口。这个项目把官方 Supabase JavaScript 客户端适配到微信小程序环境。
+
+适合这些场景：
+
+- 想让微信小程序和网页使用同一个后端
+- 想复用 Supabase 登录、数据库查询、存储和实时能力
+- 不想重新学习一套完全不同的客户端 API
+- 想让网页端和微信端共享同一套数据逻辑
+
+### 它们如何配合
+
+你可以只使用其中一个项目。一个产品通常可以这样逐步成长：
+
+1. 先用 **supacloud** 提供数据库、登录、文件存储和服务端能力。
+2. 需要管理用户、内容、订单或设置时，加上 **svadmin**。
+3. 简单登录发展成团队、角色、邀请和操作记录时，加上 **supauth**。
+4. 需要缓存、后台任务、请求限制或事件处理时，加上 **postgresx**。
+5. 需要微信小程序时，加上 **supabase-mp-js**。
+
+用一句话概括：
+
+**supacloud 负责运行产品，supauth 管理谁能使用，svadmin 帮人管理产品，postgresx 处理后台杂务，supabase-mp-js 把产品带到微信。**
 
 ### Skills
 
