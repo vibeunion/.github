@@ -22,7 +22,8 @@ You do not need to learn the whole stack before starting. Pick the part you need
 
 | I want to... | Start here |
 | --- | --- |
-| Put my app online with a database, login, file storage, and APIs | [supacloud](https://github.com/vibeunion/supacloud) |
+| Build one small app locally without Docker | [SupaCloud Lite](https://github.com/vibeunion/supacloud) |
+| Run multiple projects with a web console and production operations | [SupaCloud](https://github.com/vibeunion/supacloud) |
 | Add a ready-made admin or management screen | [svadmin](https://github.com/vibeunion/svadmin) |
 | Add user login, teams, roles, and an organization center | [supauth](https://github.com/vibeunion/supauth) |
 | Make my app faster without running a separate Redis server | [postgresx](https://github.com/vibeunion/postgresx) |
@@ -32,26 +33,27 @@ You do not need to learn the whole stack before starting. Pick the part you need
 
 | Growth stage | Main question | Add |
 | --- | --- | --- |
-| 1. Make it work | Where do my data and app services live? | supacloud |
-| 2. Make it manageable | How do I manage content and users? | svadmin |
-| 3. Make it a product | How do teams and permissions work? | supauth |
-| 4. Make it reliable | How do caching and background jobs work? | postgresx |
-| 5. Reach more users | How do I support WeChat? | supabase-mp-js |
+| 1. Prove the idea | Can I run one project quickly? | SupaCloud Lite |
+| 2. Move to production | Do I need multiple projects and platform operations? | SupaCloud |
+| 3. Make it manageable | How do I manage content and users? | svadmin |
+| 4. Make it a product | How do teams and permissions work? | supauth |
+| 5. Make it reliable | How do caching and background jobs work? | postgresx |
+| 6. Reach more users | How do I support WeChat? | supabase-mp-js |
 
 ### The Projects
 
 #### [supacloud](https://github.com/vibeunion/supacloud) — The Place Your App Runs
 
-SupaCloud is a self-hosted home for Supabase-style projects. It gives you a database, login, file storage, realtime updates, server functions, logs, and a web console on infrastructure you control.
+SupaCloud comes in two connected editions. **SupaCloud Lite** is the Bun-native, single-project, Docker-free starting point for local development and small deployments. The full **SupaCloud platform** is a self-hosted multi-tenant control plane for running isolated projects with a web console, management API, shared PostgreSQL infrastructure, frontend hosting, gateways, and production operations.
 
 Useful when you want to:
 
-- Run several small apps on one affordable server
-- Start locally with the lightweight SupaCloud Lite edition
+- Start locally with **SupaCloud Lite** and prove one idea without Docker
+- Move to the full platform when you need several isolated projects on one server
 - Deploy a frontend from GitHub and manage projects from a browser
 - Add social login, background jobs, realtime notifications, or automatic scaling later
 
-Think of it as the foundation: your app, its data, and the services around it live in one place.
+Think of Lite as the quick prototype runtime and the full platform as the production control plane. Both keep the Supabase-style developer experience while serving different stages of a product's growth.
 
 #### [svadmin](https://github.com/vibeunion/svadmin) — The Admin Screens You Do Not Want to Build From Scratch
 
@@ -108,15 +110,16 @@ Useful when you want to:
 
 You can use one project by itself. A typical product grows like this:
 
-1. Start with **supacloud** for the database, login, storage, and server-side features.
-2. Add **svadmin** when you need a screen to manage users, content, orders, or settings.
-3. Add **supauth** when simple login grows into teams, roles, invitations, and audit history.
-4. Add **postgresx** when the app needs caching, background jobs, request limits, or event handling.
-5. Add **supabase-mp-js** when the same product needs a WeChat mini-program.
+1. Start with **SupaCloud Lite** for a local or single-project prototype.
+2. Move to the full **SupaCloud platform** when you need multiple projects, a console, a management API, or production operations.
+3. Add **svadmin** when you need a screen to manage users, content, orders, or settings.
+4. Add **supauth** when simple login grows into teams, roles, invitations, and audit history.
+5. Add **postgresx** when the app needs caching, background jobs, request limits, or event handling.
+6. Add **supabase-mp-js** when the same product needs a WeChat mini-program.
 
 In plain language:
 
-**supacloud runs the product, supauth manages who can use it, svadmin helps people operate it, postgresx handles common behind-the-scenes work, and supabase-mp-js brings it to WeChat.**
+**Lite helps prove the idea, the full SupaCloud platform runs production, supauth manages who can use it, svadmin helps people operate it, postgresx handles common behind-the-scenes work, and supabase-mp-js brings it to WeChat.**
 
 ### Skills
 
@@ -136,7 +139,8 @@ VibeUnion 为 **vibecoding** 提供实用的开源积木：你先说清楚想做
 
 | 我想做什么 | 从这里开始 |
 | --- | --- |
-| 让应用拥有数据库、登录、文件存储并上线运行 | [supacloud](https://github.com/vibeunion/supacloud) |
+| 不用 Docker，先在本地快速做出一个应用 | [SupaCloud Lite](https://github.com/vibeunion/supacloud) |
+| 运行多个项目，并拥有控制台和生产运维能力 | [SupaCloud 标准版](https://github.com/vibeunion/supacloud) |
 | 快速做一个后台管理界面 | [svadmin](https://github.com/vibeunion/svadmin) |
 | 增加用户、团队、角色和组织管理 | [supauth](https://github.com/vibeunion/supauth) |
 | 不单独部署 Redis，也想做缓存、队列和限流 | [postgresx](https://github.com/vibeunion/postgresx) |
@@ -146,26 +150,27 @@ VibeUnion 为 **vibecoding** 提供实用的开源积木：你先说清楚想做
 
 | 成长阶段 | 你要解决的问题 | 添加 |
 | --- | --- | --- |
-| 1. 先做出来 | 数据和应用服务放在哪里？ | supacloud |
-| 2. 方便管理 | 如何管理内容和用户？ | svadmin |
-| 3. 做成产品 | 团队和权限怎么处理？ | supauth |
-| 4. 更稳定 | 缓存和后台任务怎么处理？ | postgresx |
-| 5. 触达更多用户 | 如何支持微信？ | supabase-mp-js |
+| 1. 先验证想法 | 能不能快速跑起来一个项目？ | SupaCloud Lite |
+| 2. 走向生产 | 是否需要多项目和平台运维？ | SupaCloud 标准版 |
+| 3. 方便管理 | 如何管理内容和用户？ | svadmin |
+| 4. 做成产品 | 团队和权限怎么处理？ | supauth |
+| 5. 更稳定 | 缓存和后台任务怎么处理？ | postgresx |
+| 6. 触达更多用户 | 如何支持微信？ | supabase-mp-js |
 
 ### 五个项目
 
 #### [supacloud](https://github.com/vibeunion/supacloud) —— 应用运行的地方
 
-SupaCloud 是一个可以自己部署的 Supabase 风格后端。它把数据库、登录、文件存储、实时更新、服务端函数、日志和网页控制台放在一起，让你可以在自己控制的服务器上运行应用。
+SupaCloud 有两个相互衔接的版本。**SupaCloud Lite** 是 Bun 原生、单项目、无需 Docker 的快速起步版本，适合本地开发和小型部署；完整的 **SupaCloud 标准版** 是自托管的多租户控制平面，提供隔离项目、网页控制台、管理 API、共享 PostgreSQL 基础设施、前端托管、网关和生产运维能力。
 
 适合这些场景：
 
-- 想在一台价格合适的服务器上运行多个小应用
-- 想先用轻量的 SupaCloud Lite 在本地开始
+- 想先用 **SupaCloud Lite** 在本地快速验证一个想法，不安装 Docker
+- 需要在一台服务器上运行多个隔离项目，再迁移到完整平台
 - 想从 GitHub 部署前端，并通过浏览器管理项目
 - 以后可能需要社交登录、后台任务、实时通知或自动扩缩容
 
-可以把它理解成应用的地基：数据、登录和周边服务都在这里运行。
+可以把 Lite 理解成快速验证用的运行时，把标准版理解成生产环境的控制平面。两者都保留 Supabase 风格的开发体验，但服务于产品成长的不同阶段。
 
 #### [svadmin](https://github.com/vibeunion/svadmin) —— 不用从零开始写后台
 
@@ -222,15 +227,16 @@ Supabase 在网页端很好用，但微信小程序有自己的网络、存储�
 
 你可以只使用其中一个项目。一个产品通常可以这样逐步成长：
 
-1. 先用 **supacloud** 提供数据库、登录、文件存储和服务端能力。
-2. 需要管理用户、内容、订单或设置时，加上 **svadmin**。
-3. 简单登录发展成团队、角色、邀请和操作记录时，加上 **supauth**。
-4. 需要缓存、后台任务、请求限制或事件处理时，加上 **postgresx**。
-5. 需要微信小程序时，加上 **supabase-mp-js**。
+1. 本地或单项目原型先使用 **SupaCloud Lite**。
+2. 需要多项目、控制台、管理 API 或生产运维时，迁移到完整的 **SupaCloud 标准版**。
+3. 需要管理用户、内容、订单或设置时，加上 **svadmin**。
+4. 简单登录发展成团队、角色、邀请和操作记录时，加上 **supauth**。
+5. 需要缓存、后台任务、请求限制或事件处理时，加上 **postgresx**。
+6. 需要微信小程序时，加上 **supabase-mp-js**。
 
 用一句话概括：
 
-**supacloud 负责运行产品，supauth 管理谁能使用，svadmin 帮人管理产品，postgresx 处理后台杂务，supabase-mp-js 把产品带到微信。**
+**Lite 帮你验证想法，SupaCloud 标准版承载生产，supauth 管理谁能使用，svadmin 帮人管理产品，postgresx 处理后台杂务，supabase-mp-js 把产品带到微信。**
 
 ### Skills
 

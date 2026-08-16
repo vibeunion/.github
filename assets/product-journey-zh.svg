@@ -1,44 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
-  <title id="title">VibeUnion &#x4EA7;&#x54C1;&#x6210;&#x957F;&#x8DEF;&#x7EBF;</title>
-  <desc id="desc">&#x4EA7;&#x54C1;&#x4ECE;&#x60F3;&#x6CD5;&#x5F00;&#x59CB;&#xFF0C;&#x4F9D;&#x6B21;&#x4F7F;&#x7528; SupaCloud&#x3001;Svadmin&#x3001;Supauth&#x3001;Postgresx &#x548C; Supabase MP JS&#x3002;</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">&#x9009;&#x62E9; SupaCloud Lite &#x548C; SupaCloud</title>
+  <desc id="desc">SupaCloud Lite &#x9002;&#x5408;&#x5FEB;&#x901F;&#x9A8C;&#x8BC1;&#x5355;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x6807;&#x51C6;&#x7248;&#x9002;&#x5408;&#x591A;&#x9879;&#x76EE;&#x751F;&#x4EA7;&#x8FD0;&#x8425;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x6DFB;&#x52A0;&#x7BA1;&#x7406;&#x3001;&#x6743;&#x9650;&#x3001;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x548C;&#x5FAE;&#x4FE1;&#x80FD;&#x529B;&#x3002;</desc>
   <defs>
     <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
       <path d="M0,0 L9,4.5 L0,9 Z" fill="#64748b"/>
     </marker>
   </defs>
-  <rect width="1200" height="260" rx="12" fill="#f8fafc"/>
-  <text x="40" y="48" fill="#0f172a" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">&#x4ECE;&#x60F3;&#x6CD5;&#x5230;&#x4EA7;&#x54C1;</text>
-  <text x="40" y="77" fill="#475569" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16">&#x5148;&#x7528;&#x5F53;&#x4E0B;&#x9700;&#x8981;&#x7684;&#x90A3;&#x4E00;&#x5757;&#xFF0C;&#x4EA7;&#x54C1;&#x957F;&#x5927;&#x540E;&#x518D;&#x9010;&#x6B65;&#x6DFB;&#x52A0;&#x80FD;&#x529B;&#x3002;</text>
+  <rect width="1200" height="430" rx="12" fill="#f8fafc"/>
+  <text x="40" y="42" fill="#0f172a" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">&#x5148;&#x5FEB;&#x901F;&#x505A;&#x51FA;&#x6765;&#xFF0C;&#x518D;&#x9010;&#x6B65;&#x8D70;&#x5411;&#x751F;&#x4EA7;</text>
+  <text x="40" y="69" fill="#475569" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="16">&#x5148;&#x7528; Lite &#x9A8C;&#x8BC1;&#x4E00;&#x4E2A;&#x60F3;&#x6CD5;&#xFF0C;&#x9700;&#x8981;&#x591A;&#x9879;&#x76EE;&#x548C;&#x8FD0;&#x7EF4;&#x65F6;&#x518D;&#x8FC1;&#x79FB;&#x5230;&#x6807;&#x51C6;&#x7248;&#x3002;</text>
+
+  <rect x="30" y="94" width="550" height="145" rx="10" fill="#ecfdf5" stroke="#34d399" stroke-width="2"/>
+  <rect x="620" y="94" width="550" height="145" rx="10" fill="#eff6ff" stroke="#60a5fa" stroke-width="2"/>
+  <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+    <text x="55" y="128" fill="#047857" font-size="22" font-weight="700">SupaCloud Lite</text>
+    <text x="55" y="153" fill="#065f46" font-size="15">&#x5355;&#x9879;&#x76EE; &#x2022; Bun &#x539F;&#x751F; &#x2022; &#x4E0D;&#x9700; Docker</text>
+    <text x="55" y="181" fill="#334155" font-size="15">&#x9002;&#x5408;&#x672C;&#x5730;&#x5F00;&#x53D1;&#x548C;&#x5C0F;&#x578B;&#x90E8;&#x7F72;</text>
+    <text x="55" y="207" fill="#334155" font-size="15">REST &#x2022; Auth &#x2022; Storage &#x2022; Realtime &#x2022; Edge Functions</text>
+
+    <text x="645" y="128" fill="#1d4ed8" font-size="22" font-weight="700">SupaCloud &#x6807;&#x51C6;&#x7248;</text>
+    <text x="645" y="153" fill="#1e40af" font-size="15">&#x591A;&#x9879;&#x76EE;&#x5E73;&#x53F0; &#x2022; &#x63A7;&#x5236;&#x53F0; &#x2022; &#x7BA1;&#x7406; API</text>
+    <text x="645" y="181" fill="#334155" font-size="15">&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8FD0;&#x884C;&#x751F;&#x4EA7;&#x57FA;&#x7840;&#x8BBE;&#x65BD;</text>
+    <text x="645" y="207" fill="#334155" font-size="15">PostgreSQL &#x2022; &#x7F51;&#x5173; &#x2022; &#x6258;&#x7BA1; &#x2022; &#x6269;&#x7F29;&#x5BB9; &#x2022; &#x8FD0;&#x7EF4;</text>
+  </g>
+  <line x1="580" y1="166" x2="610" y2="166" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="595" y="151" text-anchor="middle" fill="#64748b" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="12">&#x6210;&#x957F;</text>
+
+  <text x="40" y="282" fill="#0f172a" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" font-size="20" font-weight="700">&#x4EA7;&#x54C1;&#x957F;&#x5927;&#x540E;&#xFF0C;&#x518D;&#x6309;&#x9700;&#x8981;&#x6DFB;&#x52A0;</text>
   <g stroke="#64748b" stroke-width="2" marker-end="url(#arrow)">
-    <line x1="185" y1="161" x2="202" y2="161"/>
-    <line x1="380" y1="161" x2="397" y2="161"/>
-    <line x1="575" y1="161" x2="592" y2="161"/>
-    <line x1="770" y1="161" x2="787" y2="161"/>
-    <line x1="965" y1="161" x2="982" y2="161"/>
+    <line x1="290" y1="346" x2="315" y2="346"/>
+    <line x1="580" y1="346" x2="605" y2="346"/>
+    <line x1="870" y1="346" x2="895" y2="346"/>
   </g>
   <g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif" text-anchor="middle" fill="#ffffff">
-    <rect x="20" y="110" width="165" height="102" rx="8" fill="#334155"/>
-    <text x="102" y="151" font-size="18" font-weight="700">&#x4F60;&#x7684;&#x60F3;&#x6CD5;</text>
-    <text x="102" y="178" font-size="14">&#x4ECE;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;</text>
+    <rect x="30" y="302" width="260" height="88" rx="8" fill="#2563eb"/>
+    <text x="160" y="337" font-size="19" font-weight="700">svadmin</text>
+    <text x="160" y="363" font-size="14">&#x7BA1;&#x7406;&#x5185;&#x5BB9;&#x548C;&#x7528;&#x6237;</text>
 
-    <rect x="215" y="110" width="165" height="102" rx="8" fill="#0f766e"/>
-    <text x="297" y="151" font-size="18" font-weight="700">supacloud</text>
-    <text x="297" y="178" font-size="14">&#x8FD0;&#x884C;&#x5E94;&#x7528;</text>
+    <rect x="320" y="302" width="260" height="88" rx="8" fill="#dc2626"/>
+    <text x="450" y="337" font-size="19" font-weight="700">supauth</text>
+    <text x="450" y="363" font-size="14">&#x56E2;&#x961F;&#x3001;&#x89D2;&#x8272;&#x548C;&#x6743;&#x9650;</text>
 
-    <rect x="410" y="110" width="165" height="102" rx="8" fill="#2563eb"/>
-    <text x="492" y="151" font-size="18" font-weight="700">svadmin</text>
-    <text x="492" y="178" font-size="14">&#x7BA1;&#x7406;&#x5E94;&#x7528;</text>
+    <rect x="610" y="302" width="260" height="88" rx="8" fill="#d97706"/>
+    <text x="740" y="337" font-size="19" font-weight="700">postgresx</text>
+    <text x="740" y="363" font-size="14">&#x7F13;&#x5B58;&#x548C;&#x540E;&#x53F0;&#x4EFB;&#x52A1;</text>
 
-    <rect x="605" y="110" width="165" height="102" rx="8" fill="#dc2626"/>
-    <text x="687" y="151" font-size="18" font-weight="700">supauth</text>
-    <text x="687" y="178" font-size="14">&#x7BA1;&#x7406;&#x8BBF;&#x95EE;</text>
-
-    <rect x="800" y="110" width="165" height="102" rx="8" fill="#d97706"/>
-    <text x="882" y="151" font-size="18" font-weight="700">postgresx</text>
-    <text x="882" y="178" font-size="14">&#x5904;&#x7406;&#x540E;&#x53F0;&#x5DE5;&#x4F5C;</text>
-
-    <rect x="995" y="110" width="165" height="102" rx="8" fill="#16a34a"/>
-    <text x="1077" y="151" font-size="18" font-weight="700">supabase-mp-js</text>
-    <text x="1077" y="178" font-size="14">&#x8FDE;&#x63A5;&#x5FAE;&#x4FE1;&#x7528;&#x6237;</text>
+    <rect x="900" y="302" width="270" height="88" rx="8" fill="#16a34a"/>
+    <text x="1035" y="337" font-size="19" font-weight="700">supabase-mp-js</text>
+    <text x="1035" y="363" font-size="14">&#x89E6;&#x8FBE;&#x5FAE;&#x4FE1;&#x7528;&#x6237;</text>
   </g>
 </svg>
