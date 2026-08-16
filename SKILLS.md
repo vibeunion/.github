@@ -45,6 +45,17 @@ You can also invoke a skill explicitly:
 Use the supacloud-platform skill to deploy a new project with Caddy and Edge Functions.
 ```
 
+### Stack Profiles
+
+[VibeUnion Stack Profiles](https://github.com/vibeunion/stack-profiles) are separate from product Skills. A Skill teaches an agent how to operate one product; a Stack Profile fixes the technologies, package boundaries, backend client, and verification requirements for one application surface.
+
+Choose one primary Profile before an agent starts a new application:
+
+- `web-nuxt` for public web, SEO, and SSR
+- `cross-platform-mpx` for WeChat mini-program, H5, and React Native
+- `desktop-electron` for desktop operations tools
+- `admin-svadmin` for internal backoffice applications
+
 ### Project composition
 
 Skills are designed to compose across projects:
@@ -99,6 +110,17 @@ Skill 按上下文自动激活。当你让 Codex 部署 SupaCloud 项目、构�
 ```
 使用 supacloud-platform skill 部署一个带 Caddy 和 Edge Functions 的新项目。
 ```
+
+### Stack Profiles
+
+[VibeUnion Stack Profiles](https://github.com/vibeunion/stack-profiles) 与产品 Skill 分开维护。Skill 教 Agent 如何操作某个产品；Stack Profile 则固定一个应用端可用的技术、依赖边界、后端客户端和验收要求。
+
+Agent 创建新应用前，先选择一个主 Profile：
+
+- `web-nuxt`：官网、SEO 和 SSR
+- `cross-platform-mpx`：微信小程序、H5 和 React Native
+- `desktop-electron`：桌面运营工具
+- `admin-svadmin`：内部运营后台
 
 ### 项目组合
 
