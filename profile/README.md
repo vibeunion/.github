@@ -1,7 +1,7 @@
 # VibeUnion
 
 <p align="center">
-  <strong>Infrastructure for vibecoding. / 为 vibecoding 而生的基础设施。</strong>
+  <strong>Make AI-generated applications runnable, manageable, and evolvable. / 让 AI 生成的应用可运行、可管理、可演进。</strong>
 </p>
 
 <p align="center">
