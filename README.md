@@ -27,6 +27,24 @@ VibeUnion makes practical building blocks for vibecoding: describe what you want
 | Add caching, queues, and rate limits without Redis | [postgresx](https://github.com/vibeunion/postgresx) |
 | Connect a WeChat mini-program to Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
 
+```mermaid
+flowchart LR
+    A[Your idea] --> B[supacloud<br/>Run the app]
+    B --> C[svadmin<br/>Manage the app]
+    B --> D[supauth<br/>Manage access]
+    B --> E[postgresx<br/>Handle background work]
+    B --> F[supabase-mp-js<br/>Reach WeChat users]
+```
+
+| Growth stage | Main question | Add |
+| --- | --- | --- |
+| 1. Make it work | Where do my data and app services live? | supacloud |
+| 2. Make it manageable | How do I manage content and users? | svadmin |
+| 3. Make it a product | How do teams and permissions work? | supauth |
+| 4. Make it reliable | How do caching and background jobs work? | postgresx |
+| 5. Reach more users | How do I support WeChat? | supabase-mp-js |
+
+
 ### What Each Project Does
 
 - **supacloud** runs your app's database, login, storage, server functions, realtime features, and deployments.
@@ -75,6 +93,24 @@ VibeUnion 为 vibecoding 提供实用的开源积木：你先说清楚想做什�
 | 增加用户、团队、角色和权限 | [supauth](https://github.com/vibeunion/supauth) |
 | 不部署 Redis，也想做缓存、队列和限流 | [postgresx](https://github.com/vibeunion/postgresx) |
 | 让微信小程序连接 Supabase | [supabase-mp-js](https://github.com/vibeunion/supabase-mp-js) |
+
+```mermaid
+flowchart LR
+    A[你的想法] --> B[supacloud<br/>运行应用]
+    B --> C[svadmin<br/>管理应用]
+    B --> D[supauth<br/>管理访问]
+    B --> E[postgresx<br/>处理后台工作]
+    B --> F[supabase-mp-js<br/>连接微信用户]
+```
+
+| 成长阶段 | 你要解决的问题 | 添加 |
+| --- | --- | --- |
+| 1. 先做出来 | 数据和应用服务放在哪里？ | supacloud |
+| 2. 方便管理 | 如何管理内容和用户？ | svadmin |
+| 3. 做成产品 | 团队和权限怎么处理？ | supauth |
+| 4. 更稳定 | 缓存和后台任务怎么处理？ | postgresx |
+| 5. 触达更多用户 | 如何支持微信？ | supabase-mp-js |
+
 
 ### 每个项目做什么
 
