@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">VibeUnion product journey</title>
+  <desc id="desc">A product grows from an idea through SupaCloud, Svadmin, Supauth, Postgresx, and Supabase MP JS.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="260" rx="12" fill="#f8fafc"/>
+  <text x="40" y="48" fill="#0f172a" font-family="Arial, sans-serif" font-size="26" font-weight="700">From an idea to a growing product</text>
+  <text x="40" y="77" fill="#475569" font-family="Arial, sans-serif" font-size="16">Start with what you need, then add the next piece when the product grows.</text>
+  <g stroke="#64748b" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="185" y1="161" x2="202" y2="161"/>
+    <line x1="380" y1="161" x2="397" y2="161"/>
+    <line x1="575" y1="161" x2="592" y2="161"/>
+    <line x1="770" y1="161" x2="787" y2="161"/>
+    <line x1="965" y1="161" x2="982" y2="161"/>
+  </g>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#ffffff">
+    <rect x="20" y="110" width="165" height="102" rx="8" fill="#334155"/>
+    <text x="102" y="151" font-size="18" font-weight="700">Your idea</text>
+    <text x="102" y="178" font-size="14">Start here</text>
+
+    <rect x="215" y="110" width="165" height="102" rx="8" fill="#0f766e"/>
+    <text x="297" y="151" font-size="18" font-weight="700">supacloud</text>
+    <text x="297" y="178" font-size="14">Run your app</text>
+
+    <rect x="410" y="110" width="165" height="102" rx="8" fill="#2563eb"/>
+    <text x="492" y="151" font-size="18" font-weight="700">svadmin</text>
+    <text x="492" y="178" font-size="14">Manage it</text>
+
+    <rect x="605" y="110" width="165" height="102" rx="8" fill="#dc2626"/>
+    <text x="687" y="151" font-size="18" font-weight="700">supauth</text>
+    <text x="687" y="178" font-size="14">Manage access</text>
+
+    <rect x="800" y="110" width="165" height="102" rx="8" fill="#d97706"/>
+    <text x="882" y="151" font-size="18" font-weight="700">postgresx</text>
+    <text x="882" y="178" font-size="14">Handle background work</text>
+
+    <rect x="995" y="110" width="165" height="102" rx="8" fill="#16a34a"/>
+    <text x="1077" y="151" font-size="18" font-weight="700">supabase-mp-js</text>
+    <text x="1077" y="178" font-size="14">Reach WeChat users</text>
+  </g>
+</svg>
